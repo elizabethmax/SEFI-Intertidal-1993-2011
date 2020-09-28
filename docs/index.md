@@ -9,15 +9,15 @@
 
 # Data Visualization  
 **Species Boxplots**  
-Tetraclita rubescens [graph],[RMarkdown]  
-Mytilus californianus [graph],[RMarkdown]  
-Corallina vancouveriensis [graph],[RMarkdown]  
-Endocladia muricata [graph],[RMarkdown]  
+Tetraclita rubescens [graph], [RMarkdown]  
+Mytilus californianus [graph], [RMarkdown]  
+Corallina vancouveriensis [graph], [RMarkdown]  
+Endocladia muricata [graph], [RMarkdown]  
 **Ocean-Climate Conditions**  
-Southeast Farallon Island (SEFI) Sea Surface Temperature [graph],[RMarkdown]  
-Pacific Decadal Oscillation (PDO) [graph],[RMarkdown]
-North Pacific Gyre Oscillation (NPGO) [graph],[RMarkdown]
-Southern Oscillation Index (SOI, ENSO, El Nino) [graph],[RMarkdown]
+Southeast Farallon Island (SEFI) Sea Surface Temperature [graph], [RMarkdown]  
+Pacific Decadal Oscillation (PDO) [graph], [RMarkdown]
+North Pacific Gyre Oscillation (NPGO) [graph], [RMarkdown]
+Southern Oscillation Index (SOI, ENSO, El Nino) [graph], [RMarkdown]
 
 # Resorces
 [Intertidal_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Intertidal_Dataset.html)  
