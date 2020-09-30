@@ -1,0 +1,591 @@
+---
+title: "Species Data Viz"
+author: "Lizard"
+output: html_document
+---
+
+Set Up
+```{r Set Up, warning=FALSE, message=FALSE}
+#Clear Environment
+rm(list=ls())
+#Set work drive
+setwd("C:/Users/Elizabeth Max/iCloudDrive/Thesis/Data/R/Tidying_Species_Data")
+##Load libraries
+library(ggthemes)
+library(knitr)
+#tidyverse contains: ggplot2, dplyr, tidyr, readr, purrr, tibble, stringr, forcats
+library(tidyverse)
+library(reshape2)
+#additional themes and utilities for ggplot dataviz
+library(hrbrthemes)
+library(viridis)
+library(lubridate)
+```
+
+Load Files
+```{r load files}
+allqueryq <- read.csv("allqueryquick.csv")
+allqueryq_perm <- read.csv("allqueryq_perm.csv")
+allqueryq_rand <- read.csv("allqueryq_rand.csv")
+```
+
+Formatting
+```{r}
+allqueryq$Corallina.vancouveriensis <- as.numeric(allqueryq$Corallina.vancouveriensis)
+
+allqueryq$Date_Year <- as.character(allqueryq$Date_Year)
+```
+
+Species time series - under construction
+```{r species time series}
+allqueryq %>%
+  ggplot(aes(x = Date_Year,
+             y = aggregate(x=allqueryq$Corallina.vancouveriensis, by=list(allqueryq$Date_Year), FUN=sum))) +
+  geom_line()
+
+
+aggregate(x = allqueryq$Corallina.vancouveriensis,
+          by = list(allqueryq$Date_Year),
+          FUN = sum)
+
+aggregate(allqueryq$Corallina.vancouveriensis, by=list(Category=allqueryq$Date_Year), FUN=sum)
+
+tapply(allqueryq$Corallina.vancouveriensis, allqueryq$Date_Year, FUN=sum)
+
+allqueryq %>%
+  group_by(Date_Year) %>%
+  summarise(Corallina.vancouveriensis = sum(Corallina.vancouveriensis, is.na(Corallina.vancouveriensis)))
+```
+
+*Tetraclia rubescens*
+```{r Tetraclita boxplot - sqrt}
+#All Quads
+TetraAllSqrt<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Tetraclita.rubescens))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Tetraclita rubescens",
+          subtitle = "All Quadrats")
+
+#Permanent
+TetraPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Tetraclita.rubescens))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  geom_jitter() +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Tetraclita rubescens",
+          subtitle = "Permanent Quadrats")
+
+#Random
+TetraRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Tetraclita.rubescens))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Tetraclita rubescens",
+          subtitle = "Random Quadrats")
+  
+```
+
+*Mytilus californianus*
+```{r CA Mussel boxplots - sqrt}
+#All Quads
+MytallSqrt<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Mytilus.californianus))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Mytilus californianus",
+          subtitle = "All Quadrats")
+
+#Permanent
+MytPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Mytilus.californianus))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mytilus californianus",
+          subtitle = "Permanent Quadrats")
+
+#Random
+MytRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Mytilus.californianus))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mytilus californianus",
+          subtitle = "Random Quadrats")
+  
+```
+
+*Corallina vancouveriensis*
+```{r Corallina.vancouveriensis boxplots - sqrt}
+#All Quads
+CorAllSqrt<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Corallina.vancouveriensis))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Corallina vancouveriensis",
+          subtitle = "All Quadrats")
+
+#Permanent
+CorPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Corallina.vancouveriensis))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Corallina vancouveriensis",
+          subtitle = "Permanent Quadrats")
+
+#Random
+CorRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Corallina.vancouveriensis))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Corallina vancouveriensis",
+          subtitle = "Random Quadrats") +
+  scale_y_continuous(breaks = seq(0, 8, 2))
+  
+```
+
+*Endocladia muricata*
+```{r Endocladia muricata boxplots - sqrt}
+#All Quads
+Endoall<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Endocladia.muricata))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Endocladia muricata",
+          subtitle = "All Quadrats")
+
+#Permanent
+EndoPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Endocladia.muricata))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Endocladia muricata",
+          subtitle = "Permanent Quadrats")
+
+#Random
+EndoRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Endocladia.muricata))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Endocladia muricata",
+          subtitle = "Random Quadrats")
+  
+```
+
+*Egregia menziesii*
+```{r Egregia menziesii boxplots - sqrt}
+#All Quads
+EgregiaAll<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Egregia.menziesii))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Egregia menziesii",
+          subtitle = "All Quadrats")
+
+#Permanent
+EgregiaPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Egregia.menziesii))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Egregia menziesii",
+          subtitle = "Permanent Quadrats")
+
+#Random
+EgregiaRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Egregia.menziesii))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Egregia menziesii",
+          subtitle = "Random Quadrats")
+  
+```
+
+*Mastocarpus jardinii*
+```{r Mastocarpus jardinii boxplots - sqrt}
+#All Quads
+MastJAll<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Mastocarpus.jardinii))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Mastocarpus jardinii",
+          subtitle = "All Quadrats")
+
+#Permanent
+MastJPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Mastocarpus.jardinii))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mastocarpus jardinii",
+          subtitle = "Permanent Quadrats")
+
+#Random
+MastJRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Mastocarpus.jardinii))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mastocarpus jardinii",
+          subtitle = "Random Quadrats")
+  
+```
+
+*Mastocarpus papillatus*
+```{r Mastocarpus papillatus boxplots - sqrt}
+#All Quads
+MastPAll<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Mastocarpus.papillatus))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Mastocarpus papillatus",
+          subtitle = "All Quadrats")
+
+#Permanent
+MastPPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Mastocarpus.papillatus))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mastocarpus papillatus",
+          subtitle = "Permanent Quadrats")
+
+#Random
+MastPRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Mastocarpus.papillatus))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mastocarpus papillatus",
+          subtitle = "Random Quadrats")
+  
+```
+
+*Mazzaella affinis*
+```{r Mazzaella affinis boxplots - sqrt}
+#All Quads
+MazzAAll<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Mazzaella.affinis))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Mazzaella affinis",
+          subtitle = "All Quadrats")
+
+#Permanent
+MazzAPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Mazzaella.affinis))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mazzaella affinis",
+          subtitle = "Permanent Quadrats")
+
+#Random
+MazzARandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Mazzaella.affinis))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mazzaella affinis",
+          subtitle = "Random Quadrats")
+  
+```
+
+*Mazzaella flaccida*
+```{r Mazzaella flaccida boxplots - sqrt}
+#All Quads
+MazzFAll<-ggplot(allqueryq, aes(x = as.factor(Date_Year), y = sqrt(Mazzaella.flaccida))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 14,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        plot.subtitle = element_text(size = 12,
+                                     hjust = 0.5)) +
+  ggtitle(label = "Mazzaella flaccida",
+          subtitle = "All Quadrats")
+
+#Permanent
+MazzFPermSqrt<-ggplot(allqueryq_perm, aes(x = as.factor(Date_Year), y = sqrt(Mazzaella.flaccida))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab("Sqrt of Count") +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2003", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mazzaella flaccida",
+          subtitle = "Permanent Quadrats")
+
+#Random
+MazzFRandSqrt<-ggplot(allqueryq_rand, aes(x = as.factor(Date_Year), y = sqrt(Mazzaella.flaccida))) +
+  geom_boxplot(fill = "blue", alpha = 0.2) +
+  xlab('') +
+  ylab('Sqrt of Count') +
+  annotate("text", label = "NA", x = "2002", y = 0) +
+  annotate("text", label = "NA", x = "2004", y = 0) +
+  annotate("text", label = "NA", x = "2005", y = 0) +
+  theme(plot.title = element_text(size = 20,
+                                  hjust = 0.5,
+                                  face = "italic"),
+        axis.title.y = element_text(size = 18),
+        plot.subtitle = element_text(size = 18,
+                                     hjust = 0.5),
+        axis.text.x = element_text(size = 12),
+        axis.text.y = element_text(size = 18)) +
+  ggtitle(label = "Mazzaella flaccida",
+          subtitle = "Random Quadrats")
+  
+```
