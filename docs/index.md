@@ -9,7 +9,7 @@
 
 # Data Visualization  
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)  
-Tetraclita rubescens[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png),[random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png)
+Tetraclita rubescens[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png),[random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png)  
 Mytilus californianus [graph], [RMarkdown]  
 Corallina vancouveriensis [graph], [RMarkdown]  
 Endocladia muricata [graph], [RMarkdown]  
