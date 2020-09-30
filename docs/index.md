@@ -26,10 +26,10 @@
 *Mazzaella flaccida*  
 [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFAllSqrt.png)  
 **Ocean-Climate Conditions** [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFIOcean-Climate.html)  
-Southeast Farallon Island (SEFI) Sea Surface Temperature [graph]  
-Pacific Decadal Oscillation (PDO) [graph]  
-North Pacific Gyre Oscillation (NPGO) [graph]  
-Southern Oscillation Index (SOI, ENSO, El Nino) [graph]  
+Southeast Farallon Island (SEFI) Sea Surface Temperature [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
+Pacific Decadal Oscillation (PDO) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
+North Pacific Gyre Oscillation (NPGO) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
+Southern Oscillation Index (SOI, ENSO, El Nino) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
 
 # Resorces
 [Intertidal_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Intertidal_Dataset.html)  
