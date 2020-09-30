@@ -9,15 +9,15 @@
 
 # Data Visualization  
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)  
-Tetraclita rubescens [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraAllSqrt.png)  
-Mytilus californianus [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytAllSqrt.png)  
-Corallina vancouveriensis [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorAllSqrt.png)  
-Endocladia muricata [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoAllSqrt.png)  
-**Ocean-Climate Conditions**  
-Southeast Farallon Island (SEFI) Sea Surface Temperature [graph], [RMarkdown]  
-Pacific Decadal Oscillation (PDO) [graph], [RMarkdown]  
-North Pacific Gyre Oscillation (NPGO) [graph], [RMarkdown]  
-Southern Oscillation Index (SOI, ENSO, El Nino) [graph], [RMarkdown]  
+*Tetraclita rubescens* [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraAllSqrt.png)  
+*Mytilus californianus* [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytAllSqrt.png)  
+*Corallina vancouveriensis* [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorAllSqrt.png)  
+*Endocladia muricata* [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoAllSqrt.png)  
+**Ocean-Climate Conditions** [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFIOcean-Climate.html)  
+Southeast Farallon Island (SEFI) Sea Surface Temperature [graph]  
+Pacific Decadal Oscillation (PDO) [graph]  
+North Pacific Gyre Oscillation (NPGO) [graph]  
+Southern Oscillation Index (SOI, ENSO, El Nino) [graph]  
 
 # Resorces
 [Intertidal_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Intertidal_Dataset.html)  
