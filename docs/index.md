@@ -8,16 +8,16 @@
 5. Inserting NA Values for Missed Surveys [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/5_NA.html)  
 
 # Data Visualization  
-**Species Boxplots**  
-Tetraclita rubescens [graph], [RMarkdown]  
+**Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)
+Tetraclita rubescens[random](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.tetrarandsqrthtml),[permanent](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)
 Mytilus californianus [graph], [RMarkdown]  
 Corallina vancouveriensis [graph], [RMarkdown]  
 Endocladia muricata [graph], [RMarkdown]  
 **Ocean-Climate Conditions**  
 Southeast Farallon Island (SEFI) Sea Surface Temperature [graph], [RMarkdown]  
-Pacific Decadal Oscillation (PDO) [graph], [RMarkdown]
-North Pacific Gyre Oscillation (NPGO) [graph], [RMarkdown]
-Southern Oscillation Index (SOI, ENSO, El Nino) [graph], [RMarkdown]
+Pacific Decadal Oscillation (PDO) [graph], [RMarkdown]  
+North Pacific Gyre Oscillation (NPGO) [graph], [RMarkdown]  
+Southern Oscillation Index (SOI, ENSO, El Nino) [graph], [RMarkdown]  
 
 # Resorces
 [Intertidal_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Intertidal_Dataset.html)  
