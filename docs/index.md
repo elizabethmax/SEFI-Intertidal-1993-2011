@@ -8,7 +8,7 @@
 5. Inserting NA Values for Missed Surveys [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/5_NA.html)  
 
 # Data Visualization  
-**Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)
+**Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)  
 Tetraclita rubescens[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png),[random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png)
 Mytilus californianus [graph], [RMarkdown]  
 Corallina vancouveriensis [graph], [RMarkdown]  
