@@ -3,9 +3,9 @@
 # Tidying Intertidal Species Dataset - Data Wrangling
 1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_1_Format.html)  
 2. Changing NA to Zero [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_2_Zeroes.html)  
-3. Reconciling Duplicate Species Counts [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/3_Duplicates.html)  
-4. Updating Algal Nomenclature [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/4_Nomenclature.html)  
-5. Inserting NA Values for Missed Surveys [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/5_NA.html)  
+3. Reconciling Duplicate Species Counts [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_3_Duplicates.html)  
+4. Updating Algal Nomenclature [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_4_Renaming.html)  
+5. Inserting NA Values for Missed Surveys [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_5_NAs.html)  
 
 # Data Visualization  
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
