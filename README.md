@@ -1,1 +1,1 @@
-# Thesis
+# Masters Project
