@@ -1,5 +1,5 @@
-# You're on my thesis page!
-**Thesis overview:**  My thesis focuses on key rocky intertidal algae and invertebrates on the Farallon Islands. This data was pulled from a yearly analysis by the Greater Farallones National Marine Sanctuary starting in 1993 through 2011. I look at the effects of El Nino (ENSO, SOI) events, sea surface temperature (SST), and pinniped presence.
+# You're on my masters project page!
+**Project overview:** This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from a annual surveys executed by the [Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html) in the time period of 1993-2011. Analysis of species cover trends during this time period focuses on environmental variables.
 # Tidying Intertidal Species Dataset<br>Data Wrangling
 1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_1_Format.html)  
 2. Changing NA to Zero [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_2_Zeroes.html)  
