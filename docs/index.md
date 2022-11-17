@@ -1,5 +1,5 @@
-# You're on my masters project page!
-**Project overview:** This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from a annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. Analysis of species cover trends during this time period focuses on environmental variables.<br>
+# Project Overview
+This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from a annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis.<br>
 ### **Research Questions**<br>
 1. Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and low tide air temperature) and change in salinity?<br>
 2. Does rocky intertidal species cover respond to climate patterns (SOI, PDO, NPGO)?<br>
