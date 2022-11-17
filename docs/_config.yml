@@ -2,3 +2,5 @@ theme: jekyll-theme-leap-day
 title: Elizabeth Max Master project
 description: Investigating long-term change in the rocky intertidal of a remote island sanctuary<br>
 Farallon Islands 1993-2011
+kramdown:
+  input: Kramdown
