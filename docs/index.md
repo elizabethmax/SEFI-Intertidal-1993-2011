@@ -1,6 +1,7 @@
 # You're on my masters project page!
 **Project overview:** This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from a annual surveys executed by the [Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html) in the time period of 1993-2011. Analysis of species cover trends during this time period focuses on environmental variables.
-# Tidying Intertidal Species Dataset<br>Data Wrangling
+# Tidying Intertidal Species Dataset<br>
+Data Wrangling
 1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_1_Format.html)  
 2. Changing NA to Zero [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_2_Zeroes.html)  
 3. Reconciling Duplicate Species Counts [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_3_Duplicates.html)  
