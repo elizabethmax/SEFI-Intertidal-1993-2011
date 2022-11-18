@@ -16,8 +16,8 @@ This project focuses on the species cover of rocky intertidal alage and inverteb
 4. Updating Algal Nomenclature [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_4_Renaming.html)  
 5. Inserting NA Values for Missed Surveys [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_5_NAs.html)  
 </details>
-  
-# Data Visualization  
+
+<br># Data Visualization  
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
 *Tetraclita rubescens*   
 [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraAllSqrt.png)  
