@@ -6,8 +6,10 @@ This project focuses on the species cover of rocky intertidal alage and inverteb
 2. Does rocky intertidal species cover respond to climate patterns (SOI, PDO, NPGO)?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
 
+# Tidying the Dataset with R
 <details> 
-  <summary># Tidying the Dataset</summary><br>
+  <summary> RMarkdowns </summary>
+  
 1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_1_Format.html)  
 2. Changing NA to Zero [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_2_Zeroes.html)  
 3. Reconciling Duplicate Species Counts [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_3_Duplicates.html)  
