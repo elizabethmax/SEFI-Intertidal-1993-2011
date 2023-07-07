@@ -3,14 +3,14 @@
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from a annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis.<br>
 ### **Research Questions**<br>
 1. Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and low tide air temperature) and change in salinity?<br>
-2. Does rocky intertidal species cover respond to climate patterns (SOI, PDO, NPGO)?<br>
+2. Does rocky intertidal species cover respond to climate patterns (SOI, PDO, NPGO, BEUTI, CUTI)?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
 
 # Tidying the Dataset with R
 <details> 
   <summary> RMarkdowns </summary>
   
-1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Data Wrangling and Tidying
+1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Data-Wrangling_and_Tidying
 /Tidying_Data.1_Format.html)  
 2. Changing NA to Zero [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_2_Zeroes.html)  
 3. Reconciling Duplicate Species Counts [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_3_Duplicates.html)  
