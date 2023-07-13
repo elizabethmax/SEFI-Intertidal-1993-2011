@@ -7,12 +7,10 @@ This project focuses on the species cover of rocky intertidal alage and inverteb
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
 
 # Tidying the Dataset with R 
-RMarkdowns
-  
+RMarkdowns<br>
 1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data1_Format.html) <br>
 2. Dealing with NA and Zeroes [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data2_NA-and-Zeroes.html) <br>
-3. Species Name Corrections [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data3_NameCorrections.html) <br>
-
+3. Species Name Corrections [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data3_NameCorrections.html)
 <br>
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
