@@ -1,10 +1,14 @@
-# Elizabeth Max Masters Project, SFSU
+# Investigation into climate-related change of rocky intertidal species on a remote island sanctuary in Northern California
+### Elizabeth Max Masters Project, SFSU
 # Project Overview
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from a annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis.<br>
 ### **Research Questions**<br>
 1. Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and low tide air temperature) and change in salinity?<br>
 2. Does rocky intertidal species cover respond to climate patterns (SOI, PDO, NPGO, BEUTI, CUTI)?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
+
+### **About this GitPage**<br>
+This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.
 
 # Tidying the Dataset with R 
 RMarkdowns, performed in the following order:
