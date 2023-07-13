@@ -11,7 +11,7 @@ RMarkdowns
   
 1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data1_Format.html) <br>
 2. Dealing with NA and Zeroes [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data2_NA-and-Zeroes.html) <br>
-3. Species Name Corrections [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_3_Duplicates.html) <br>
+3. Species Name Corrections [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data3_NameCorrections.html) <br>
 
 <br>
 # Data Visualization 
