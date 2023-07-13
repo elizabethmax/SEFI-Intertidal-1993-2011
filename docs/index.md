@@ -1,6 +1,5 @@
 # Elizabeth Max Masters Project, SFSU
-# Investigating long-term change in the rocky intertidal of a remote island sanctuary
-Farallon Islands 1993-2011
+# Investigating long-term change in the rocky intertidal of a remote island sanctuary Farallon Islands 1993-2011
 ### **About this GitPage**<br>
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
 
