@@ -11,13 +11,13 @@ Read **[this paper by Roletto et. al, 2014](https://bioone.org/journals/monograp
 2. Does rocky intertidal species cover respond to climate patterns (SOI, PDO, NPGO, BEUTI, CUTI)?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
 
-
-
 # Tidying the Dataset with R 
 RMarkdowns, performed in the following order:
 1. [Formatting](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data1_Format.html) <br>
 2. [Dealing with NA and Zeroes](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data2_NA-and-Zeroes.html) <br>
 3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data3_NameCorrections.html)<br>
+
+
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
