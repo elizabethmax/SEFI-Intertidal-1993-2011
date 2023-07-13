@@ -44,5 +44,5 @@ North Pacific Gyre Oscillation (NPGO) [graph](https://elizabethmax.github.io/SEF
 Southern Oscillation Index (SOI, ENSO, El Nino) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
 
 # Resources
-[Intertidal_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Intertidal_Dataset.html) This csv table includes the survey data with point counts paired with geographically relevant environmental data.  
+[Full_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFI_RockyIntertidalData_Bio-Env.html) This csv table includes the survey data with point counts paired with geographically relevant environmental data.  
 [Oceanographic_Conditions](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Oceanographic_Conditions.html)  
