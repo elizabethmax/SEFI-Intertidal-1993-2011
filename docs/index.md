@@ -10,14 +10,14 @@ This project focuses on the species cover of rocky intertidal alage and inverteb
 <details> 
   <summary> RMarkdowns </summary>
   
-1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/docs/Data-Wrangling_and_Tidying/Tidying_Data.1_Format.html) <br>
+1. Formatting [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011//Data-Wrangling_and_Tidying/Tidying_Data.1_Format.html) <br>
 2. Changing NA to Zero [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_2_Zeroes.html) <br>
 3. Reconciling Duplicate Species Counts [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_3_Duplicates.html) <br>
 4. Updating Algal Nomenclature [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_4_Renaming.html) <br>
 5. Inserting NA Values for Missed Surveys [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Species_Data_5_NAs.html)  
 </details>
-
-<br># Data Visualization  
+<br>
+# Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
 *Tetraclita rubescens*   
 [permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraAllSqrt.png)  
