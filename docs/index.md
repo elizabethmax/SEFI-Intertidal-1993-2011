@@ -36,7 +36,7 @@ Pacific Decadal Oscillation (PDO) [graph](https://elizabethmax.github.io/SEFI-In
 North Pacific Gyre Oscillation (NPGO) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
 Southern Oscillation Index (SOI, ENSO, El Nino) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
 
-# Resorces
+# Resources
 [Intertidal_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Intertidal_Dataset.html)  
 [Oceanographic_Conditions](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Oceanographic_Conditions.html)  
 [Farallon_Pinniped_Data](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Farallon_Pinniped_Data.html)
