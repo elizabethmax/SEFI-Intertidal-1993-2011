@@ -18,8 +18,9 @@ RMarkdowns, performed in the following order:
 2. [Dealing with NA and Zeroes](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data2_NA-and-Zeroes.html) <br>
 3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data3_NameCorrections.html)<br>
 
-# Research Question 1. Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and air temperature) and change in salinity (SSS)?
-This questions addresses the relationship between species cover and environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 36 different models. In the interest of choosing the best model, AIC analysis was applied to all candidate models.
+# Research Question 1. 
+# Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and air temperature) and change in salinity (SSS)?
+This questions addresses the relationship between species cover and environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 36 different models. In the interest of choosing the best model, AIC analysis was applied to all possible candidate models.
 [AIC Analysis RMarkdown]()
 
 # Data Visualization 
