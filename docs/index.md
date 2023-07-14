@@ -1,5 +1,6 @@
 # Elizabeth Max Masters Project, SFSU
-# Investigating long-term change in the rocky intertidal of a remote island sanctuary Farallon Islands 1993-2011
+# Investigating long-term change in the rocky intertidal of a remote island wildlife refuge
+# Farallon Islands 1993-2011
 ### **About this GitPage**<br>
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
 
@@ -7,7 +8,7 @@ This GitPage serves as an open-source publication of the methods used to wrangle
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from a annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
 Read **[this paper by Roletto et. al, 2014](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full)** to read more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands.
 ### **Research Questions**<br>
-1. Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and low tide air temperature) and change in salinity?<br>
+1. Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and air temperature) and change in salinity (SSS)?<br>
 2. Does rocky intertidal species cover respond to climate patterns (SOI, PDO, NPGO, BEUTI, CUTI)?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
 
@@ -17,7 +18,9 @@ RMarkdowns, performed in the following order:
 2. [Dealing with NA and Zeroes](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data2_NA-and-Zeroes.html) <br>
 3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data3_NameCorrections.html)<br>
 
-
+# Research Question 1. Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and air temperature) and change in salinity (SSS)?
+This questions addresses the relationship between species cover and environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 36 different models. In the interest of choosing the best model, AIC analysis was applied to all candidate models.
+[AIC Analysis RMarkdown]()
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
@@ -44,5 +47,5 @@ North Pacific Gyre Oscillation (NPGO) [graph](https://elizabethmax.github.io/SEF
 Southern Oscillation Index (SOI, ENSO, El Nino) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
 
 # Resources
-[Full_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFI_RockyIntertidalData_Bio-Env.html) This csv table includes the survey data with point counts paired with geographically relevant environmental data.  
-[Oceanographic_Conditions](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Oceanographic_Conditions.html)  
+[Full_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFI_RockyIntertidalData_Bio-Env.html) This csv table includes the survey data with point counts paired with geographically relevant environmental data. 
+
