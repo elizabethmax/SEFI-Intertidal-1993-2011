@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Elizabeth Max's Master of Science 2024 <br>
 # Climate-related changes in rocky intertidal species distribution on the Farallon Islands
 ### **About this GitPage**<br>
