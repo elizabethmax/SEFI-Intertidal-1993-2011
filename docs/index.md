@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-# Elizabeth Max's Master of Science 2024 <br>
+
 # Climate-related changes in rocky intertidal species distribution on the Farallon Islands
+## Elizabeth Max 2024
 ### **About this GitPage**<br>
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
 
