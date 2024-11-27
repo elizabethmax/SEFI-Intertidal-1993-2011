@@ -21,7 +21,7 @@ Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monog
 RMarkdowns, performed in the following order:
 1. [Formatting](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.1_Format.html) <br>
 2. [Dealing with NA and Zeroes](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.2_NA.and.Zeroes.html) <br>
-3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data3_NameCorrections.html)<br>
+3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.3_Name.Corrections.html)<br>
 
 # Research Question 1. 
 # Do we see a trend in the cover of rocky intertidal species that is associated with thermal stress (SST and air temperature) and change in salinity (SSS)?
