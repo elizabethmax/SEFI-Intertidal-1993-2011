@@ -25,7 +25,8 @@ RMarkdowns, performed in the following order:
 
 # Research Question 1. 
 ### Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?
-This questions addresses the relationship between species cover and environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 36 different models. In the interest of choosing the best model, AIC analysis was applied to all possible candidate models.
+This questions addresses the relationship between species cover and environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
+
 [AIC Analysis RMarkdown]()
 
 # Data Visualization 
