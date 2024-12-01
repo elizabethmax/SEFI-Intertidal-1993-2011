@@ -46,13 +46,15 @@ The top models: <br>
 ### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
 This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 combinations. Again, AIC was used to find the top model.
 
-The top models:
+The top models: <br>
 **All upright species**: NPGO + SOI + CUTI + BEUTI  
 - [AIC results]()
-- [linear mixed model results]()  
+- [linear mixed model results]()
+  
 **Non-crustose algae**: NPGO + PDO + CUTI + BEUTI  
 - [AIC results]()  
-- [linear mixed model results]()  
+- [linear mixed model results]()
+
 **Non-crustose vertebrates**: SOI
 - [AIC results]()  
 - [linear mixed model results]()  
@@ -64,6 +66,9 @@ Northern species group has a southern range boundary north of Point Conception, 
 Southern species group has a northern range boundary south of Cape Mendocino.
 Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries defined above.
 [California rocky intertidal species biogeographical range map]()
+[Mann-Kendall Test results, table]()
+[[Mann-Kendall Test results, z-scores graphed by species]()
+[[Mann-Kendall Test results, z-scores graphed by species range category]()
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
