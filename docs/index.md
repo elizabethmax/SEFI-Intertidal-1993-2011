@@ -66,10 +66,10 @@ Northern species group has a southern range boundary north of Point Conception, 
 Southern species group has a northern range boundary south of Cape Mendocino.
 Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries defined above. <br>
 I chose the Mann-Kendall test for its ability to identify monotonic (increasing/decreasing) trends which is respresented by the z statistic. [Click here to read more about the Mann-Kendall test]() <br>
-[California rocky intertidal species biogeographical range map]() <br>
-[Results table]()<br>
-[Z-scores graphed by species]()<br>
-[Mann-Kendall Test results, z-scores graphed by species range category]()<br>
+- [California rocky intertidal species biogeographical range map]() <br>
+- [Results table]()<br>
+- [Z-scores graphed by species]()<br>
+- [Z-scores graphed by species range category]()<br>
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
