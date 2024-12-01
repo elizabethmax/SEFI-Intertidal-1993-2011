@@ -38,15 +38,24 @@ Non-crustose vertebrates, [AIC results](): interaction of sea surface temperatur
 ### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
 This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 combinations. Again, AIC was used to find the top model.
 
-The top models:
-- **All upright species**: NPGO + SOI + CUTI + BEUTI
-  - [AIC results]()
-  - [linear mixed model results]()
-**Non-crustose algae**: NPGO + PDO + CUTI + BEUTI, [linear mixed model results]()
-**Non-crustose vertebrates, [AIC results]()**: SOI, [linear mixed model results]()
+The top models:  
+- **All upright species**: NPGO + SOI + CUTI + BEUTI  
+  - [AIC results]()  
+  - [linear mixed model results]()  
+- **Non-crustose algae**: NPGO + PDO + CUTI + BEUTI  
+  - [AIC results]()  
+  - [linear mixed model results]()  
+- **Non-crustose vertebrates**: SOI  
+  - [AIC results]()  
+  - [linear mixed model results]()  
 
 # Research Question 3
-###
+### Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?
+Key species were chosen based on being identified as a species of interest for this region and by meeting the northern and southern classification criteria (Barry et al., 1995; Blanchette et al., 2008; Burton, 1998; Duncan et al., 2013; Raimondi et al., 2019; Sanford et al., 2019). 
+Northern species group has a southern range boundary north of Point Conception, California.
+Southern species group has a northern range boundary south of Cape Mendocino.
+Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries defined above.
+[California rocky intertidal species biogeographical range map]()
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
