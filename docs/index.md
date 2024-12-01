@@ -23,11 +23,28 @@ RMarkdowns, performed in the following order:
 2. [Dealing with NA and Zeroes](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.2_NA.and.Zeroes.html) <br>
 3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.3_Name.Corrections.html)<br>
 
-# Research Question 1. 
+# Research Question 1
 ### Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?
-This questions addresses the relationship between species cover and environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
+This questions addresses the relationship between species cover and local-scale environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
 
 [AIC Analysis RMarkdown]()
+
+The top models:
+All upright species, [AIC results](): air temperature + sea surface salinity, [linear mixed model results]()
+Non-crustose algae, [AIC results](): sea surface salinity, [linear mixed model results]()
+Non-crustose vertebrates, [AIC results](): interaction of sea surface temperature and sea surface salinity, [linear mixed model results]()
+
+# Research Question 2
+### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
+This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 combinations. Again, AIC was used to find the top model.
+
+The top models:
+*All upright species, [AIC results]()*: NPGO + SOI + CUTI + BEUTI, [linear mixed model results]()
+Non-crustose algae, [AIC results](): NPGO + PDO + CUTI + BEUTI, [linear mixed model results]()
+Non-crustose vertebrates, [AIC results](): SOI, [linear mixed model results]()
+
+# Research Question 3
+###
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
