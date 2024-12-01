@@ -39,9 +39,11 @@ Non-crustose vertebrates, [AIC results](): interaction of sea surface temperatur
 This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 combinations. Again, AIC was used to find the top model.
 
 The top models:
-*All upright species, [AIC results]()*: NPGO + SOI + CUTI + BEUTI, [linear mixed model results]()
-Non-crustose algae, [AIC results](): NPGO + PDO + CUTI + BEUTI, [linear mixed model results]()
-Non-crustose vertebrates, [AIC results](): SOI, [linear mixed model results]()
+- **All upright species**: NPGO + SOI + CUTI + BEUTI
+  - [AIC results]()
+  - [linear mixed model results]()
+**Non-crustose algae**: NPGO + PDO + CUTI + BEUTI, [linear mixed model results]()
+**Non-crustose vertebrates, [AIC results]()**: SOI, [linear mixed model results]()
 
 # Research Question 3
 ###
