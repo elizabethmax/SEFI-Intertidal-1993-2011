@@ -32,10 +32,10 @@ This questions addresses the relationship between species cover and local-scale 
 The top models:  
 **All upright species**: air temperature + sea surface salinity
 - [AIC results]()
-- [linear mixed model results]()  
+- [linear mixed model results]() <br>
 Non-crustose algae: sea surface salinity
 - [AIC results]()
-- [linear mixed model results]()  
+- [linear mixed model results]() <br>
 Non-crustose vertebrates: interaction of sea surface temperature and sea surface salinity  
 - [AIC results]()
 - [linear mixed model results]()
