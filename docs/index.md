@@ -34,11 +34,11 @@ The top models: <br>
 - [AIC results]()
 - [linear mixed model results]() <br>
 
-Non-crustose algae: sea surface salinity
+**Non-crustose algae**: sea surface salinity
 - [AIC results]()
 - [linear mixed model results]() <br>
 
-Non-crustose vertebrates: interaction of sea surface temperature and sea surface salinity  
+**Non-crustose vertebrates***: interaction of sea surface temperature and sea surface salinity  
 - [AIC results]()
 - [linear mixed model results]()
 
