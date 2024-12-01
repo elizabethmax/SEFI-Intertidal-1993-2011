@@ -65,10 +65,10 @@ Key species were chosen based on being identified as a species of interest for t
 Northern species group has a southern range boundary north of Point Conception, California.
 Southern species group has a northern range boundary south of Cape Mendocino.
 Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries defined above.
-[California rocky intertidal species biogeographical range map]()
-[Mann-Kendall Test results, table]()
-[[Mann-Kendall Test results, z-scores graphed by species]()
-[[Mann-Kendall Test results, z-scores graphed by species range category]()
+[California rocky intertidal species biogeographical range map]() <br>
+[Mann-Kendall Test results, table]()<br>
+[Mann-Kendall Test results, z-scores graphed by species]()<br>
+[Mann-Kendall Test results, z-scores graphed by species range category]()<br>
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
