@@ -5,14 +5,14 @@ layout: default
 # Elizabeth Max's Master of Science Thesis 2024
 ## Climate-related changes in rocky intertidal species distribution on the Farallon Islands
 
-![Southeast Farallon Island blue skies and ocean](/docs/assets/images/IMG_20200214_162227_landscape.png)
-
-### **About this GitPage**<br>
-This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
+![Southeast Farallon Island blue skies and ocean](/SEFI-Intertidal-1993-2011/docs/assets/images/IMG_20200214_162227_landscape.png)
 
 <img src="{{site.baseurl | prepend: site.url}}docs/assets/images/IMG_20200214_162227_landscape.png" alt="Southeast Farallon Island blue skies and ocean" />
 
 <img src="https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/docs/assets/IMG_20200214_162227_landscape.png" alt="Southeast Farallon Island blue skies and ocean" />
+
+### **About this GitPage**<br>
+This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
 
 # Project Overview
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
