@@ -15,6 +15,10 @@ This GitPage serves as an open-source publication of the methods used to wrangle
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
 Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full)**</b> to learn more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands 1993-2011.
 
+## Southeast Farallon Islands
+The Farallon Islands are a string of 7 granite islands about 5 miles long that rest about 30 miles west of San Francisco, CA and 5 miles east of the continental shelf (Office of National Marine Sanctuaries, 2017). These granite islands host diverse marine and terrestrial species and are influenced by upwelling in the California Current, one of the world's most productive regions (Capitolo, 2009).
+![Map of the Farallones relative to SF Bay, CA](assets/images/SF_Bay-Farallon_Map.jpg)
+
 ### **Research Questions**<br>
 1. Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?<br>
 2. Does cover respond to ocean-climate patterns (**[NPGO](https://www.psl.noaa.gov/gcos_wgsp/Timeseries/NPGO/)**, **[PDO](https://www.ncei.noaa.gov/access/monitoring/pdo/)**, **[SOI](https://www.ncei.noaa.gov/access/monitoring/enso/soi)**, **[CUTI, and BEUTI](https://mjacox.com/upwelling-indices/)**)?<br>
