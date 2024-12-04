@@ -5,7 +5,7 @@ layout: default
 # Elizabeth Max's Master of Science Thesis 2024
 ## Climate-related changes in rocky intertidal species distribution on the Farallon Islands
 
-![Southeast Farallon Island blue skies and ocean](/SEFI-Intertidal-1993-2011/docs/assets/IMG_20200214_162227_landscape.jpg)
+![Southeast Farallon Island blue skies and ocean](/SEFI-Intertidal-1993-2011/assets/IMG_20200214_162227_landscape.jpg)
 
 ### **About this GitPage**<br>
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
@@ -16,7 +16,7 @@ Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monog
 
 ### **Research Questions**<br>
 1. Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?<br>
-2. Does cover respond to ocean-climate patterns (**[NPGO](https://www.psl.noaa.gov/gcos_wgsp/Timeseries/NPGO/)**, **[PDO](https://www.ncei.noaa.gov/access/monitoring/pdo/)**, **[SOI](https://www.ncei.noaa.gov/access/monitoring/enso/soi)**, **[CUTI, and BEUTI](https://mjacox.com/upwelling-indices/)**?<br>
+2. Does cover respond to ocean-climate patterns (**[NPGO](https://www.psl.noaa.gov/gcos_wgsp/Timeseries/NPGO/)**, **[PDO](https://www.ncei.noaa.gov/access/monitoring/pdo/)**, **[SOI](https://www.ncei.noaa.gov/access/monitoring/enso/soi)**, **[CUTI, and BEUTI](https://mjacox.com/upwelling-indices/)**)?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
 
 # Tidying the Dataset with R 
