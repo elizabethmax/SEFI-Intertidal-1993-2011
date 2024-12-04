@@ -7,13 +7,9 @@ layout: default
 
 ![Southeast Farallon Island blue skies and ocean](/assets/images/IMG_20200214_162227_landscape.png)
 
-
-
 ### **About this GitPage**<br>
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
-<img src="{{site.baseurl | prepend: site.url}}docs/assets/images/IMG_20200214_162227_landscape.png" alt="Southeast Farallon Island blue skies and ocean" />
 
-<img src="https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/docs/assets/IMG_20200214_162227_landscape.png" alt="Southeast Farallon Island blue skies and ocean" />
 # Project Overview
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
 Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full)**</b> to learn more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands 1993-2011.
