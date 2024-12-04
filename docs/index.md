@@ -13,7 +13,7 @@ This GitPage serves as an open-source publication of the methods used to wrangle
 
 # Project Overview
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
-Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full)**</b> to learn more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands 1993-2011.
+The seminal paper on this research by Roletto et. al found that upright algal and sessile vertebrate species were decreasing while crusting species and bare rock were increasing. My research aimed to investigate the drivers behind this trend of ecological simplification in a climate change context. Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full)**</b> to learn more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands 1993-2011.
 
 ## The Farallon Islands
 The Farallon Islands are a string of 7 granite islands about 5 miles long that rest about 30 miles west of San Francisco, CA and 5 miles east of the continental shelf (Office of National Marine Sanctuaries, 2017). These granite islands host diverse marine and terrestrial species and are influenced by upwelling in the California Current, one of the world's most productive regions (Capitolo, 2009). The relative inaccessibility and protection of the Farallones make their rocky intertidal habitats suitable for studying ecological changes with minimal direct human disturbance (Lucas & Smith, 2016; White, 1995).
@@ -40,51 +40,48 @@ RMarkdowns, performed in the following order:
 
 # Research Question 1
 ### Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?
-This questions addresses the relationship between species cover and local-scale environmental variables. All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
+This questions addresses the relationship between species cover and local-scale environmental variables. Species were separated into three groups: 1) all upright species - this includes algae and sessile invertebrates; 2) upright, non-crusting algae; 3) sessile non-crusting invertebrates. Crusting organisms like sponges, bryozoans, and crustose algae were excluded from analysis because my question is about trends in cover of this non-crustose category specifically. 
+All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
 
 [AIC Analysis RMarkdown]()
 
-The top models: <br>
-**All upright species**: air temperature + sea surface salinity
-- [AIC results]()
-- [linear mixed model results]() 
+AIC ranked top models for all categories in Question 1. The plus sign "+" indicates additive variables, the colon ":" represents the interaction between variables. The low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
-**Non-crustose algae**: sea surface salinity
-- [AIC results]()
-- [linear mixed model results]() 
-
-**Non-crustose vertebrates**: interaction of sea surface temperature and sea surface salinity  
-- [AIC results]()
-- [linear mixed model results]()
+| Category of Upright Species Cover |    Top Model   | R-squared |
+|:----------------------------------|:---------------|:----------|
+| All                               | Air temp + SSS |   0.035   |
+| Algae                             |       SSS      |   0.007   |
+| Invertebrates                     |     SST:SSS    |   0.008   |
 
 # Research Question 2
 ### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
-This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 combinations. Again, AIC was used to find the top model.
+This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 linear mixed models. Again, AIC was used to find the top model and the low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
-The top models: <br>
-**All upright species**: NPGO + SOI + CUTI + BEUTI  
-- [AIC results]()
-- [linear mixed model results]()
-  
-**Non-crustose algae**: NPGO + PDO + CUTI + BEUTI  
-- [AIC results]()  
-- [linear mixed model results]()
-
-**Non-crustose vertebrates**: SOI
-- [AIC results]()  
-- [linear mixed model results]()  
+| Category of Upright Species Cover |          Top Model        | R-squared |
+|:----------------------------------|:--------------------------|:----------|
+| All                               | NPGO + SOI + CUTI + BEUTI |   0.101   |
+| Algae                             | NPGO + PDO + CUTI + BEUTI |   0.037   |
+| Invertebrates                     |            SOI            |   0.003   |  
 
 # Research Question 3
 ### Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?
 Key species were chosen based on being identified as a species of interest for this region and by meeting the northern and southern classification criteria (Barry et al., 1995; Blanchette et al., 2008; Burton, 1998; Duncan et al., 2013; Raimondi et al., 2019; Sanford et al., 2019). 
+<br>
+I chose the Mann-Kendall test for its ability to identify monotonic (increasing/decreasing) trends which is respresented by the z statistic. [Click here to read more about the Mann-Kendall test]() <br>
+
 Northern species group has a southern range boundary north of Point Conception, California.
 Southern species group has a northern range boundary south of Cape Mendocino.
-Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries defined above. <br>
-I chose the Mann-Kendall test for its ability to identify monotonic (increasing/decreasing) trends which is respresented by the z statistic. [Click here to read more about the Mann-Kendall test]() <br>
-- [California rocky intertidal species biogeographical range map]() <br>
-- [Results table]()<br>
-- [Z-scores graphed by species]()<br>
-- [Z-scores graphed by species range category]()<br>
+Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries.
+![California rocky intertidal species biogeographical range map](assets/images/Biogeo_ranges-cropped.jpg)<br>
+
+Z-scores from the Mann-Kendall Test by species to determine range shifts.
+Positive z-scores indicate an increasing trend, negative z-scores indicate a decreasing trend. An asterisk indicates a significant p-value (less than 0.05).
+Ae = _Anthopleura elegantissima_, Ax = _Anthopleura xanthogrammica_, Bs = _Balanus_ spp., Cg = _Cladophora graminea_, Cp = _Callithamnion pikeanum_, Cv = _Corallina vancouveriensis_, Ee = _Egregia menziesii_, Eu = _Endocladia muricata_, Gs = _Gelidium_ spp., Mb = _Microcladia borealis_, Mi = _Microcladia coulteri_, Ms = _Mastocarpus_ spp., Mv = _Myriogramme variegata_*, My = _Mytilus californianus_, Nl = _Neorhodomela larix_, Ns = _Neogastroclonium subarticulatum_, Os = _Osmundea spectabilis_, Pl = _Polysiphonia savatieri_, Pp = _Pollicipes polymerus_, Py = _Porphyra_ spp., Tr = _Tetraclita rubescens_, Us = _Ulva_ spp.
+*_Myriogramme variegata_ is put in the Southern group because it is considered rare, typically hyperlocal to Pacific Grove, California (Abbott & Hollenberg, 1976).
+![Z-scores by species, bar chart](assets/images/Q3_species_plot.png)<br>
+
+Z-scores by species range groups
+![Z-scores by species range categories, bar chart](assets/images/Q3_Group_Chart.png)<br>
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
