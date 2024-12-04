@@ -25,7 +25,7 @@ Since 1993, GFNMS biologists have conducted annual rocky intertidal surveys on t
 
 ## Quadrat Sample
 Each site had three to four permanent quadrats, placed in the middle and high intertidal zones. Due to the steep terrain of most rocky intertidal sites on the Farallones, these zones are narrow at most locations. A random number system was used to choose the direction and distance from each permanent quadrat resulting in about 1 to 3 randomly placed quadrats. All quadrats were 30 x 50 cm (0.15m2) and underwent point-intercept sampling of 50 points each, one point for each equal-sized rectangle in a grid. Tidepools, all sea stars, mobile invertebrates, and highly rugose areas were avoided in both the permanent and random quadrats.
-![Rocky intertidal quadrat](assets/images/Q1_Blowhole_Peninsula_Feb_2020.JPG)
+![Rocky intertidal quadrat](assets/images/Q1_Blowhole-Peninsula_Feb-2020.JPG)
 
 ## **Research Questions**<br>
 1. Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?<br>
