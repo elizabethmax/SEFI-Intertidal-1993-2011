@@ -43,7 +43,7 @@ RMarkdowns, performed in the following order:
 This questions addresses the relationship between species cover and local-scale environmental variables. Species were separated into three groups: 1) all upright species - this includes algae and sessile invertebrates; 2) upright, non-crusting algae; 3) sessile non-crusting invertebrates. Crusting organisms like sponges, bryozoans, and crustose algae were excluded from analysis because my question is about trends in cover of this non-crustose category specifically. 
 All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
 
-[AIC Analysis RMarkdown]()
+[AIC Analysis RMarkdown for Question 1](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/AIC-Analysis-Q1.html)
 
 AIC ranked top models for all categories in Question 1. The plus sign "+" indicates additive variables, the colon ":" represents the interaction between variables. The low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
