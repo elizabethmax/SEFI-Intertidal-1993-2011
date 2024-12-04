@@ -7,6 +7,8 @@ layout: default
 
 ![Southeast Farallon Island blue skies and ocean](/docs/assets/images/IMG_20200214_162227_landscape.jpg)
 
+<img src="{{site.baseurl | prepend: site.url}}docs/assets/images/IMG_20200214_162227_landscape.jpg" alt="Southeast Farallon Island blue skies and ocean" />
+
 ### **About this GitPage**<br>
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
 
