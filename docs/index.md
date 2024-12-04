@@ -5,7 +5,7 @@ layout: default
 # Elizabeth Max's Master of Science Thesis 2024
 ## Climate-related changes in rocky intertidal species distribution on the Farallon Islands
 
-![Southeast Farallon Island blue skies and ocean]({{"/docs/assets/images/IMG_20200214_162227_landscape.jpg" | relative_url }}} )
+![Southeast Farallon Island blue skies and ocean]({{elizabethmax/SEFI-Intertidal-1993-2011}}/docs/assets/images/IMG_20200214_162227_landscape.jpg")
 
 ### **About this GitPage**<br>
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
