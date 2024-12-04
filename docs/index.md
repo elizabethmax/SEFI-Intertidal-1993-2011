@@ -15,11 +15,19 @@ This GitPage serves as an open-source publication of the methods used to wrangle
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
 Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full)**</b> to learn more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands 1993-2011.
 
-## Southeast Farallon Islands
-The Farallon Islands are a string of 7 granite islands about 5 miles long that rest about 30 miles west of San Francisco, CA and 5 miles east of the continental shelf (Office of National Marine Sanctuaries, 2017). These granite islands host diverse marine and terrestrial species and are influenced by upwelling in the California Current, one of the world's most productive regions (Capitolo, 2009).
+## The Farallon Islands
+The Farallon Islands are a string of 7 granite islands about 5 miles long that rest about 30 miles west of San Francisco, CA and 5 miles east of the continental shelf (Office of National Marine Sanctuaries, 2017). These granite islands host diverse marine and terrestrial species and are influenced by upwelling in the California Current, one of the world's most productive regions (Capitolo, 2009). The relative inaccessibility and protection of the Farallones make their rocky intertidal habitats suitable for studying ecological changes with minimal direct human disturbance (Lucas & Smith, 2016; White, 1995).
 ![Map of the Farallones relative to SF Bay, CA](assets/images/SF_Bay-Farallon_Map.jpg)
 
-### **Research Questions**<br>
+## Southeast Farallon Islands and Survey Site Map
+Since 1993, GFNMS biologists have conducted annual rocky intertidal surveys on the two South Farallon Islands: Maintop (or West End) and Southeast Farallon Island (SEFI) (Roletto et al., 2014). Six long-term study areas exist on the two largest South Farallon Islands.
+![Survey Site Map](assets/images/SEFI_Site_Map_scale_high.jpg)
+
+## Quadrat Sample
+Each site had three to four permanent quadrats, placed in the middle and high intertidal zones. Due to the steep terrain of most rocky intertidal sites on the Farallones, these zones are narrow at most locations. A random number system was used to choose the direction and distance from each permanent quadrat resulting in about 1 to 3 randomly placed quadrats. All quadrats were 30 x 50 cm (0.15m2) and underwent point-intercept sampling of 50 points each, one point for each equal-sized rectangle in a grid. Tidepools, all sea stars, mobile invertebrates, and highly rugose areas were avoided in both the permanent and random quadrats.
+![Rocky intertidal quadrat](assets/images/Q1_Blowhole_Peninsula_Feb_2020.JPG)
+
+## **Research Questions**<br>
 1. Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?<br>
 2. Does cover respond to ocean-climate patterns (**[NPGO](https://www.psl.noaa.gov/gcos_wgsp/Timeseries/NPGO/)**, **[PDO](https://www.ncei.noaa.gov/access/monitoring/pdo/)**, **[SOI](https://www.ncei.noaa.gov/access/monitoring/enso/soi)**, **[CUTI, and BEUTI](https://mjacox.com/upwelling-indices/)**)?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
