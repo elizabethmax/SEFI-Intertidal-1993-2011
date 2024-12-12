@@ -58,7 +58,10 @@ AIC ranked top models for all categories in Question 1. The plus sign "+" indica
 ### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
 This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 linear mixed models. Again, AIC was used to find the top model and the low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
+**[AIC Analysis RMarkdown for Question 2](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/AIC-Analysis-Q2.html)**
+
 ### Results Table for Question 2
+
 | Category of Upright Species Cover |          Top Model        | R-squared |
 |:----------------------------------|:--------------------------|:----------|
 | All                               | NPGO + SOI + CUTI + BEUTI |   0.101   |
@@ -76,6 +79,8 @@ Northern species group has a southern range boundary north of Point Conception, 
 Southern species group has a northern range boundary south of Cape Mendocino.
 Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries.
 ![California rocky intertidal species biogeographical range map](assets/images/Biogeo_ranges-cropped.jpg)<br>
+
+**[Mann-Kendall Test RMarkdown for Question 3](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Q3.-Poleward_Range_Shift.html)**
 
 ### Z-scores from the Mann-Kendall Test by species to determine range shifts.
 Positive z-scores indicate an increasing trend, negative z-scores indicate a decreasing trend.
@@ -96,8 +101,5 @@ Ae = _Anthopleura elegantissima_, Ax = _Anthopleura xanthogrammica_, Bs = _Balan
 [*Mastocarpus jardinii*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastJAllSqrt.png)  
 [*Mastocarpus papillatus*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastPAllSqrt.png)  
 [*Mazzaella affinis*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzAAllSqrt.png)  
-[*Mazzaella flaccida*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFAllSqrt.png)<br><br>
-
-# Resources
-[Full_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFI_RockyIntertidalData_Bio-Env.html) This csv table includes the survey data with point counts paired with geographically relevant environmental data. 
+[*Mazzaella flaccida*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFAllSqrt.png)
 
