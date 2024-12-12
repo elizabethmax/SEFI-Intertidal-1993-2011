@@ -85,7 +85,7 @@ Cosmopolitan species group have a geographic range that exceed both the northern
 ### Z-scores from the Mann-Kendall Test by species to determine range shifts.
 Positive z-scores indicate an increasing trend, negative z-scores indicate a decreasing trend.
 ![Z-scores by species, bar chart](assets/images/Q3_species_plot.png)<br>
-An asterisk indicates a significant p-value (less than 0.05).
+An asterisk indicates a significant p-value (less than 0.05). <br>
 Ae = _Anthopleura elegantissima_, Ax = _Anthopleura xanthogrammica_, Bs = _Balanus_ spp., Cg = _Cladophora graminea_, Cp = _Callithamnion pikeanum_, Cv = _Corallina vancouveriensis_, Ee = _Egregia menziesii_, Eu = _Endocladia muricata_, Gs = _Gelidium_ spp., Mb = _Microcladia borealis_, Mi = _Microcladia coulteri_, Ms = _Mastocarpus_ spp., Mv = _Myriogramme variegata_*, My = _Mytilus californianus_, Nl = _Neorhodomela larix_, Ns = _Neogastroclonium subarticulatum_, Os = _Osmundea spectabilis_, Pl = _Polysiphonia savatieri_, Pp = _Pollicipes polymerus_, Py = _Porphyra_ spp., Tr = _Tetraclita rubescens_, Us = _Ulva_ spp.
 *_Myriogramme variegata_ is put in the Southern group because it is considered rare, typically hyperlocal to Pacific Grove, California (Abbott & Hollenberg, 1976).
 
