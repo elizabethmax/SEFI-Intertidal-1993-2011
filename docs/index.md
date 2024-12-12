@@ -92,8 +92,10 @@ Ae = _Anthopleura elegantissima_, Ax = _Anthopleura xanthogrammica_, Bs = _Balan
 ### Z-scores by species range groups
 ![Z-scores by species range categories, bar chart](assets/images/Q3_Group_Chart.png)<br>
 
-# Data Visualization 
-**Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
+# Species Boxplots 
+For curious minds, below are the boxplots for species of interest.
+
+[Boxplot RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
 [*Tetraclita rubescens*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraAllSqrt.png)  
 [*Mytilus californianus*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytAllSqrt.png)  
 [*Corallina vancouveriensis*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorAllSqrt.png)  
