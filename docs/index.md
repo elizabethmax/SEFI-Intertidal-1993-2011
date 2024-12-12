@@ -72,7 +72,7 @@ This question investigates the relationship between large-scale ocean patterns a
 ### Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?
 Key species were chosen based on being identified as a species of interest for this region and by meeting the northern and southern classification criteria (Barry et al., 1995; Blanchette et al., 2008; Burton, 1998; Duncan et al., 2013; Raimondi et al., 2019; Sanford et al., 2019). 
 <br>
-I chose the Mann-Kendall test for its ability to identify monotonic (increasing/decreasing) trends which is respresented by the z statistic. [Click here to read more about the Mann-Kendall test]() <br>
+I chose the Mann-Kendall test for its ability to identify monotonic (increasing/decreasing) trends which is respresented by the z statistic.
 
 ### Biogeographical Range Map for California Rocky Intertidal Species
 Northern species group has a southern range boundary north of Point Conception, California.
