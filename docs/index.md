@@ -48,11 +48,11 @@ All combinations of SST, air temperature, SSS, and the interactive effects of SS
 ### Results Table for Question 1
 AIC ranked top models for all categories in Question 1. The plus sign "+" indicates additive variables, the colon ":" represents the interaction between variables. The low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
-| Category of Upright Species Cover |    Top Model   | R-squared |
-|:----------------------------------|:---------------|:----------|
-| All | Air temp + SSS |   0.035   |
-| Algae |       SSS      |   0.007   |
-| Invertebrates |     SST:SSS    |   0.008   |
+| Category of Upright Species Cover | Top Model | R-squared |
+|:----------------------------------|:----------|:----------|
+| All | Air temp + SSS | 0.035 |
+| Algae | SSS | 0.007 |
+| Invertebrates | SST:SSS | 0.008 |
 
 # Research Question 2
 ### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
