@@ -9,7 +9,7 @@ layout: default
 ## Climate-related changes in rocky intertidal species distribution on the Farallon Islands
 
 ### **About this GitPage**<br>
-This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio.<br>
+This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio. All maps were created by me in ArcGIS Pro. All photos were taken by me.<br>
 
 # Project Overview
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
@@ -43,8 +43,9 @@ RMarkdowns, performed in the following order:
 This questions addresses the relationship between species cover and local-scale environmental variables. Species were separated into three groups: 1) all upright species - this includes algae and sessile invertebrates; 2) upright, non-crusting algae; 3) sessile non-crusting invertebrates. Crusting organisms like sponges, bryozoans, and crustose algae were excluded from analysis because my question is about trends in cover of this non-crustose category specifically. 
 All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
 
-[AIC Analysis RMarkdown for Question 1](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/AIC-Analysis-Q1.html)
+**[AIC Analysis RMarkdown for Question 1](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/AIC-Analysis-Q1.html)**
 
+### Results Table for Question 1
 AIC ranked top models for all categories in Question 1. The plus sign "+" indicates additive variables, the colon ":" represents the interaction between variables. The low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
 | Category of Upright Species Cover |    Top Model   | R-squared |
@@ -57,6 +58,7 @@ AIC ranked top models for all categories in Question 1. The plus sign "+" indica
 ### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
 This question investigates the relationship between large-scale ocean patterns and species cover. All combinations of NPGO, PDO, SOI, CUTI, and BEUTI come out to 96 linear mixed models. Again, AIC was used to find the top model and the low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
+### Results Table for Question 2
 | Category of Upright Species Cover |          Top Model        | R-squared |
 |:----------------------------------|:--------------------------|:----------|
 | All                               | NPGO + SOI + CUTI + BEUTI |   0.101   |
@@ -69,43 +71,32 @@ Key species were chosen based on being identified as a species of interest for t
 <br>
 I chose the Mann-Kendall test for its ability to identify monotonic (increasing/decreasing) trends which is respresented by the z statistic. [Click here to read more about the Mann-Kendall test]() <br>
 
+### Biogeographical Range Map for California Rocky Intertidal Species
 Northern species group has a southern range boundary north of Point Conception, California.
 Southern species group has a northern range boundary south of Cape Mendocino.
 Cosmopolitan species group have a geographic range that exceed both the northern and southern range boundaries.
 ![California rocky intertidal species biogeographical range map](assets/images/Biogeo_ranges-cropped.jpg)<br>
 
-Z-scores from the Mann-Kendall Test by species to determine range shifts.
-Positive z-scores indicate an increasing trend, negative z-scores indicate a decreasing trend. An asterisk indicates a significant p-value (less than 0.05).
+### Z-scores from the Mann-Kendall Test by species to determine range shifts.
+Positive z-scores indicate an increasing trend, negative z-scores indicate a decreasing trend.
+![Z-scores by species, bar chart](assets/images/Q3_species_plot.png)<br>
+An asterisk indicates a significant p-value (less than 0.05).
 Ae = _Anthopleura elegantissima_, Ax = _Anthopleura xanthogrammica_, Bs = _Balanus_ spp., Cg = _Cladophora graminea_, Cp = _Callithamnion pikeanum_, Cv = _Corallina vancouveriensis_, Ee = _Egregia menziesii_, Eu = _Endocladia muricata_, Gs = _Gelidium_ spp., Mb = _Microcladia borealis_, Mi = _Microcladia coulteri_, Ms = _Mastocarpus_ spp., Mv = _Myriogramme variegata_*, My = _Mytilus californianus_, Nl = _Neorhodomela larix_, Ns = _Neogastroclonium subarticulatum_, Os = _Osmundea spectabilis_, Pl = _Polysiphonia savatieri_, Pp = _Pollicipes polymerus_, Py = _Porphyra_ spp., Tr = _Tetraclita rubescens_, Us = _Ulva_ spp.
 *_Myriogramme variegata_ is put in the Southern group because it is considered rare, typically hyperlocal to Pacific Grove, California (Abbott & Hollenberg, 1976).
-![Z-scores by species, bar chart](assets/images/Q3_species_plot.png)<br>
 
-Z-scores by species range groups
+### Z-scores by species range groups
 ![Z-scores by species range categories, bar chart](assets/images/Q3_Group_Chart.png)<br>
 
 # Data Visualization 
 **Species Boxplots**  [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Species_DataViz.html)   
-*Tetraclita rubescens*   
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraAllSqrt.png)  
-*Mytilus californianus*   
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytAllSqrt.png)  
-*Corallina vancouveriensis*   
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorAllSqrt.png)  
-*Endocladia muricata*  
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoAllSqrt.png)  
-*Mastocarpus jardinii*  
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastJPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastJRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastJAllSqrt.png)  
-*Mastocarpus papillatus*  
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastPPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastPRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastPAllSqrt.png)  
-*Mazzaella affinis*  
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzAPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzARandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzAAllSqrt.png)  
-*Mazzaella flaccida*  
-[permanent quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFPermSqrt.png), [random quadrats](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFRandSqrt.png), [together](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFAllSqrt.png)<br><br> 
-**Ocean-Climate Conditions** [RMarkdown](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFIOcean-Climate.html)  
-Southeast Farallon Island (SEFI) Sea Surface Temperature [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
-Pacific Decadal Oscillation (PDO) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
-North Pacific Gyre Oscillation (NPGO) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
-Southern Oscillation Index (SOI, ENSO, El Nino) [graph](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/.html)  
+[*Tetraclita rubescens*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/TetraAllSqrt.png)  
+[*Mytilus californianus*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MytAllSqrt.png)  
+[*Corallina vancouveriensis*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/CorAllSqrt.png)  
+[*Endocladia muricata*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/EndoAllSqrt.png)  
+[*Mastocarpus jardinii*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastJAllSqrt.png)  
+[*Mastocarpus papillatus*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MastPAllSqrt.png)  
+[*Mazzaella affinis*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzAAllSqrt.png)  
+[*Mazzaella flaccida*](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/MazzFAllSqrt.png)<br><br>
 
 # Resources
 [Full_Dataset](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/SEFI_RockyIntertidalData_Bio-Env.html) This csv table includes the survey data with point counts paired with geographically relevant environmental data. 
