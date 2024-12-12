@@ -12,8 +12,8 @@ layout: default
 This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio. All maps were created by me in ArcGIS Pro. All photos were taken by me.<br>
 
 # Project Overview
-This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the **[Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html)** in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
-The seminal paper on this research by Roletto et. al found that upright algal and sessile vertebrate species were decreasing while crusting species and bare rock were increasing. My research aimed to investigate the drivers behind this trend of ecological simplification in a climate change context. Read <b>**[this paper by Roletto et. al, 2014](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full)**</b> to learn more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands 1993-2011.
+This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the [**Greater Farallones National Marine Sanctuary**](https://farallones.noaa.gov/science/intertidal.html) in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
+The seminal paper on this research by Roletto et. al found that upright algal and sessile vertebrate species were decreasing while crusting species and bare rock were increasing. My research aimed to investigate the drivers behind this trend of ecological simplification in a climate change context. Read [**this paper by Roletto et. al, 2014**](https://bioone.org/journals/monographs-of-the-western-north-american-naturalist/volume-7/issue-1/042.007.0120/Status-and-Trends-of-the-Rocky-Intertidal-Community-on-the/10.3398/042.007.0120.full) to learn more about the survey methods and the initial findings regarding the status and trends of rocky intertidal species cover on the Farallon Islands 1993-2011.
 
 ## The Farallon Islands
 The Farallon Islands are a string of 7 granite islands about 5 miles long that rest about 30 miles west of San Francisco, CA and 5 miles east of the continental shelf (Office of National Marine Sanctuaries, 2017). These granite islands host diverse marine and terrestrial species and are influenced by upwelling in the California Current, one of the world's most productive regions (Capitolo, 2009). The relative inaccessibility and protection of the Farallones make their rocky intertidal habitats suitable for studying ecological changes with minimal direct human disturbance (Lucas & Smith, 2016; White, 1995).
@@ -29,30 +29,30 @@ Each site had three to four permanent quadrats, placed in the middle and high in
 
 ## **Research Questions**<br>
 1. Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?<br>
-2. Does cover respond to ocean-climate patterns (**[NPGO](https://www.psl.noaa.gov/gcos_wgsp/Timeseries/NPGO/)**, **[PDO](https://www.ncei.noaa.gov/access/monitoring/pdo/)**, **[SOI](https://www.ncei.noaa.gov/access/monitoring/enso/soi)**, **[CUTI, and BEUTI](https://mjacox.com/upwelling-indices/)**)?<br>
+2. Does cover respond to ocean-climate patterns ([**NPGO**](https://www.psl.noaa.gov/gcos_wgsp/Timeseries/NPGO/), [**PDO**](https://www.ncei.noaa.gov/access/monitoring/pdo/), [**SOI**](https://www.ncei.noaa.gov/access/monitoring/enso/soi), [**CUTI, and BEUTI**](https://mjacox.com/upwelling-indices/))?<br>
 3. Are the biogeographical range shifts that are seen on the mainland exhibited on the islands?<br>
 
 # Tidying the Dataset with R 
 RMarkdowns, performed in the following order:
-1. [Formatting](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.1_Format.html) <br>
-2. [Dealing with NA and Zeroes](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.2_NA.and.Zeroes.html) <br>
-3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.3_Name.Corrections.html)<br>
+1. [**Formatting**](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.1_Format.html) <br>
+2. [**Dealing with NA and Zeroes**](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.2_NA.and.Zeroes.html) <br>
+3. [**Species Name Corrections**](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.3_Name.Corrections.html)<br>
 
 # Research Question 1
 ### Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?
-This questions addresses the relationship between species cover and local-scale environmental variables. Species were separated into three groups: 1) all upright species - this includes algae and sessile invertebrates; 2) upright, non-crusting algae; 3) sessile non-crusting invertebrates. Crusting organisms like sponges, bryozoans, and crustose algae were excluded from analysis because my question is about trends in cover of this non-crustose category specifically. 
+This questions addresses the relationship between species cover and local-scale environmental variables. Species were separated into three groups: 1) all upright species - this includes algae and sessile invertebrates; 2) upright, non-crusting algae; 3) sessile non-crusting invertebrates. Crusting organisms like sponges, bryozoans, and crustose algae were excluded from analysis because my question is about trends in cover of this non-crustose category specifically. <br>
 All combinations of SST, air temperature, SSS, and the interactive effects of SST and SSS come out to 45 combinations. In the interest of choosing the best linear mixed model, AIC analysis was applied to all possible candidate models.
 
-**[AIC Analysis RMarkdown for Question 1](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/AIC-Analysis-Q1.html)**
+[**AIC Analysis RMarkdown for Question 1**](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/AIC-Analysis-Q1.html)
 
 ### Results Table for Question 1
 AIC ranked top models for all categories in Question 1. The plus sign "+" indicates additive variables, the colon ":" represents the interaction between variables. The low R-squared values indicate that other ecological factors are affecting cover of upright species.
 
 | Category of Upright Species Cover |    Top Model   | R-squared |
 |:----------------------------------|:---------------|:----------|
-| All                               | Air temp + SSS |   0.035   |
-| Algae                             |       SSS      |   0.007   |
-| Invertebrates                     |     SST:SSS    |   0.008   |
+| All | Air temp + SSS |   0.035   |
+| Algae |       SSS      |   0.007   |
+| Invertebrates |     SST:SSS    |   0.008   |
 
 # Research Question 2
 ### Does cover respond to ocean-climate patterns NPGO, PDO, SOI, CUTI, and BEUTI?
