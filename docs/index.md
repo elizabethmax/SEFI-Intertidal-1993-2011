@@ -9,7 +9,7 @@ layout: default
 ## Climate-related changes in rocky intertidal species distribution on the Farallon Islands
 
 ### **About this GitPage**<br>
-This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio. All maps were created by me in ArcGIS Pro. All photos were taken by me. You can read my full submitted thesis [here](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Elizabeth-Max_SEFI-Rocky-Intertidal-1993-2011_Masters-Thesis-SFSU_12-2024.pdf)<br> 
+This GitPage serves as an open-source publication of the methods used to wrangle and analyze the data I used for my masters project. Below are Rmarkdowns with the code that I used in addition to the data visualizations that I created in RStudio. All maps were created by me in ArcGIS Pro. All photos were taken by me. You can read my full submitted thesis [here](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Elizabeth-Max_SEFI-Rocky-Intertidal-1993-2011_Masters-Thesis-SFSU_12-2024.pdf). <br> 
 
 # Project Overview
 This project focuses on the species cover of rocky intertidal alage and invertebrates on the Farallon Islands. Cover data is sourced from annual surveys executed by the [Greater Farallones National Marine Sanctuary](https://farallones.noaa.gov/science/intertidal.html) in the time period of 1993-2011. The relationship of environmental variables and species cover are central to this analysis. <br>
