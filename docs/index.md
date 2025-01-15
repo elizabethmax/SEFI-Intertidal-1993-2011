@@ -38,6 +38,8 @@ RMarkdowns, performed in the following order:
 2. [Dealing with NA and Zeroes](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.2_NA.and.Zeroes.html) <br>
 3. [Species Name Corrections](https://elizabethmax.github.io/SEFI-Intertidal-1993-2011/Tidying_Data.3_Name.Corrections.html)<br>
 
+[Final dataset](https://drive.google.com/file/d/1-XUCBnyrpxQDOA6BB8T3NCI6k0VrhsWi/view)
+
 # Research Question 1
 ### Are variations in air temperature, sea surface temperature (SST), and sea surface salinity (SSS) associated with changes in cover?
 This questions addresses the relationship between species cover and local-scale environmental variables. Species were separated into three groups: 1) all upright species - this includes algae and sessile invertebrates; 2) upright, non-crusting algae; 3) sessile non-crusting invertebrates. Crusting organisms like sponges, bryozoans, and crustose algae were excluded from analysis because my question is about trends in cover of this non-crustose category specifically. <br>
